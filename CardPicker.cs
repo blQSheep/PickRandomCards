@@ -9,6 +9,12 @@ namespace PickRandomCards
     internal class CardPicker
     {
         static Random random = new Random();
+
+        /// <summary>
+        /// Pick a number of cards and returns them.
+        /// </summary>
+        /// <param name="numberOfCards">The number of cards to pick.</param>
+        /// <returns>An array of strings that contain the card names</returns>
         public static string[] PickSomeCards(int numberOfCards)
         {
             string[] pickCards = new string[numberOfCards];
